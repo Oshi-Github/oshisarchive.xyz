@@ -34,7 +34,8 @@ $('.pane').click(function() {
 					$('.videoPlayer').css("display", "block");	document.getElementById('videocontain').src = panes[i][1];
 					
 					if (paneGithubs[i] !== "") 
-						{		$('#githubcontrols').css("display", "block"); document.getElementById("githubcontrols").href = paneGithubs[i];
+						{		
+							$('#githubcontrols').css("display", "block"); document.getElementById("githubanchor").href = paneGithubs[i];
 						}
 				}
 		}
@@ -45,5 +46,5 @@ $('#videocontrols').click(function() {
 	$('.videoPlayer').css("display", "none");
 	document.getElementById('videocontain').src = "blank";
 	$('#githubcontrols').css("display", "none");
-	document.getElementById("githubcontrols").href = "#";
+	document.getElementById("githubanchor").href = "#";
 });
