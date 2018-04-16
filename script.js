@@ -36,6 +36,8 @@ $('.pane').click(function() {
 					if (paneGithubs[i] !== "") 
 						{		
 							$('#githubcontrols').css("display", "block"); document.getElementById("githubanchor").href = paneGithubs[i];
+						} else {
+							$('#githubcontrols').css("display", "none");	document.getElementById("githubanchor").href = "#";
 						}
 				}
 		}
