@@ -33,7 +33,7 @@ $('.pane').click(function() {
 				{
 					$('.videoPlayer').css("display", "block");	document.getElementById('videocontain').src = panes[i][1];
 					
-					if (paneGithubs[i] !== "") 
+					if (paneGithubs[i] != "") 
 						{		
 							$('#githubcontrols').css("display", "block"); document.getElementById("githubanchor").href = paneGithubs[i];
 						} else {
